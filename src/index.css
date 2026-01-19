@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #D20000;
+  --bg-primary: #D20000;
+  --bg-secondary: #7e7e7e;
+  --hover: #ED3434;
+  --active: #990000;
+    --font-primary: "Nunito", sans-serif;
+
+}
+body {
+  font-family: var(--font-primary);
+}
+
+
+ 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+ 
+.animate-marquee {
+  animation: marquee 90s linear infinite;
+}
