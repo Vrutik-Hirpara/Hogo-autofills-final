@@ -191,13 +191,13 @@ export default function WhyChoose() {
             >
                 <DecoratedTitle
                     text="Trusted & Affordable"
-                    color={themes.backgroundBlack}
+                    color={themes.textWhite}
                 />
 
                 <div className="">
 
 <SectionHeading secondLine="DETAILING"
-  style={{ color: themes.backgroundBlack }}
+  style={{ color: themes.textWhite }}
 >
   WHY CHOOSE OUR CAR
 </SectionHeading>
@@ -209,7 +209,7 @@ export default function WhyChoose() {
 
                     <p
                         className="max-w-3xl mx-auto"
-                        style={{ color: themes.backgroundBlack, opacity: 0.8 }}
+                        style={{ color: themes.textWhite, opacity: 0.8 }}
                     >
                         Interior deep clean was amazing! All the stains and p, <br />
                         Interior deep clean was amazing! All the stains and pet hair are gone. 

@@ -2,13 +2,16 @@ import DecoratedTitle from "./DecoratedTitle";
 import RollingButton from "./RollingButton";
 import { themes } from "../config/themeConfig";
  
+
 import s1 from "../assets/images/service1.jpg";
 import s2 from "../assets/images/service2.jpg";
 import s3 from "../assets/images/service3.jpg";
-import s4 from "../assets/images/service4.jpg";
+import s4 from "../assets/images/service4.png";
 import s5 from "../assets/images/service5.jpg";
-import s6 from "../assets/images/service6.jpg";
- 
+import s6 from "../assets/images/service6.png";
+
+
+
 import b1 from "../assets/images/brand1.jpg";
 import b2 from "../assets/images/brand2.jpg";
 import b3 from "../assets/images/brand3.jpg";
@@ -54,7 +57,7 @@ Premium Car Detailing</SectionHeading>
  
             <p
               className="max-w-2xl mx-auto mt-4"
-              style={{ color: themes.backgroundGray }}
+              style={{ color: themes.textWhite }}
             >
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
             </p>

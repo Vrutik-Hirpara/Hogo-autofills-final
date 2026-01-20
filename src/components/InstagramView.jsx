@@ -21,11 +21,11 @@ export default function InstagramView() {
     >
       {/* Title */}
       <div className="text-center mb-14 px-6">
-        <DecoratedTitle text="OUR INSTAGRAM"color={themes.backgroundBlack} />
+        <DecoratedTitle text="OUR INSTAGRAM"color={themes.textWhite} />
  
         <h2
           className="text-3xl md:text-5xl font-bold mt-6"
-          style={{ color: themes.backgroundBlack }}
+          style={{ color: themes.textWhite }}
         >
           @hogo_autofills
         </h2>
