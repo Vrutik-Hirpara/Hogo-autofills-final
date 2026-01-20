@@ -404,7 +404,9 @@ export default function AboutView() {
  
           {/* Content */}
           <div className="space-y-8">
-            <DecoratedTitle text="ABOUT US" />
+            <DecoratedTitle text="ABOUT US" 
+            color={themes.backgroundBlack}
+            />
  
             <h2 className="text-4xl md:text-5xl font-bold leading-tight max-w-xl text-left md:text-justify"
             style={{ color: themes.backgroundBlack }}

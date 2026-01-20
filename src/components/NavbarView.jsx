@@ -27,12 +27,14 @@ export default function NavbarView() {
     <>
       {/* ================= NAVBAR ================= */}
 <nav
-  className="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-6 bg-[#111111]"
+  className="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 sm:py-6
+ bg-[#111111]"
 >
 
 
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <img src={logo} alt="Hogo Autofills" className="h-12" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6
+ flex items-center justify-between">
+          <img src={logo} alt="Hogo Autofills" className="h-10 sm:h-12" />
 
           <div className="hidden md:flex items-center gap-12">
             {[
@@ -89,11 +91,13 @@ export default function NavbarView() {
 
       {/* ================ SIDEBAR ================= */}
       <div
-        className={`fixed top-0 right-0 h-full w-[400px] sm:w-[420px] md:w-[450px] bg-[#0A0A0A] z-50 shadow-2xl transition-transform duration-400 ${
+        className={`fixed top-0 right-0 h-full w-[75vw] sm:w-[380px] md:w-[400px]
+ bg-[#0A0A0A] z-50 shadow-2xl transition-transform duration-400 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="h-full flex flex-col justify-between p-8 overflow-y-auto">
+        <div className="h-full flex flex-col justify-between p-6 sm:p-8
+ overflow-y-auto">
           {/* TOP: LOGO + CLOSE */}
           <div>
             <div className="flex items-center justify-between mb-6">

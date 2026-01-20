@@ -8,7 +8,7 @@ export default function RollingButton({
       onClick={onClick}
       className={`
         relative overflow-hidden
-        px-6 py-2
+px-4 sm:px-6 py-2
         rounded-[6px]
         bg-[var(--primary)]
         text-white font-medium
@@ -17,7 +17,7 @@ export default function RollingButton({
         ${className}
       `}
     >
-      <span className="relative block h-6 overflow-hidden">
+      <span className="relative block h-auto overflow-hidden">
         <span
           className="
             inline-block

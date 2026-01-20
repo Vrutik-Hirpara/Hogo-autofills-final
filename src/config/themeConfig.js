@@ -14,5 +14,7 @@ export const themes = {
   hover: "#ED3434",
   active: "#990000",
   backgroundBlack: "#0f0f0f",
-  textWhite: "#ffffff"
+  textWhite: "#ffffff",
+    fontPrimary: `"Oxanium", Sans-serif`
+
 };

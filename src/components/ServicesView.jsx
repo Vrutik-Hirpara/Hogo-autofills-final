@@ -38,7 +38,7 @@ export default function ServicesView() {
 >
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
-            <DecoratedTitle text="WELCOME TO Hogo Autofills" />
+            <DecoratedTitle text="WELCOME TO Hogo Autofills" style={{ color: themes.backgroundBlack }}/>
  
             <h2
               className="text-3xl sm:text-4xl md:text-5xl font-bold mt-6"

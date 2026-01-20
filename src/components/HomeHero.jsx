@@ -13,7 +13,7 @@
 //         <h1
 //           className="uppercase"
 //           style={{
-//             fontFamily: `"Oxanium", Sans-serif`,
+//             fontFamily: themes.fontPrimary,
 //             fontSize: "72px",
 //             fontWeight: "500",
 //             lineHeight: "1.15",
@@ -26,7 +26,7 @@
 //         <p
 //           className="mt-6 max-w-xl"
 //           style={{
-//             fontFamily: `"Oxanium", Sans-serif`,
+//             fontFamily: themes.fontPrimary,
 //             fontSize: "18px",
 //             fontWeight: "400",
 //           }}
@@ -75,7 +75,7 @@
 //         <h1
 //           className="uppercase mx-auto"
 //           style={{
-//             fontFamily: `"Oxanium", Sans-serif`,
+//             fontFamily: themes.fontPrimary,
 //             fontSize: "72px",
 //             fontWeight: "500",
 //             lineHeight: "1.15",
@@ -89,7 +89,7 @@
 //         <p
 //           className="mt-6 max-w-xl mx-auto"
 //           style={{
-//             fontFamily: `"Oxanium", Sans-serif`,
+//             fontFamily: themes.fontPrimary,
 //             fontSize: "18px",
 //             fontWeight: "400",
 //           }}
@@ -101,7 +101,7 @@
 //         {/* ONLY ONE BUTTON (AS YOU ASKED) */}
 //         <div className="mt-10 flex justify-center">
 //                      <RollingButton text="Get Quote" />
-         
+
 //         </div>
 //       </div>
 
@@ -140,7 +140,7 @@
 //         <h1
 //           className="uppercase mx-auto"
 //           style={{
-//             fontFamily: `"Oxanium", Sans-serif`,
+//             fontFamily: themes.fontPrimary,
 //             fontSize: "72px",
 //             fontWeight: "500",
 //             lineHeight: "1.15",
@@ -154,7 +154,7 @@
 //         <p
 //           className="mt-6 max-w-xl mx-auto text-gray-300"
 //           style={{
-//             fontFamily: `"Oxanium", Sans-serif`,
+//             fontFamily: themes.fontPrimary,
 //             fontSize: "18px",
 //             fontWeight: "400",
 //           }}
@@ -202,7 +202,7 @@
 //           <h1
 //             className="uppercase mx-auto"
 //             style={{
-//               fontFamily: `"Oxanium", Sans-serif`,
+//               fontFamily: themes.fontPrimary,
 //               fontSize: "72px",
 //               fontWeight: "500",
 //               lineHeight: "1.15",
@@ -216,7 +216,7 @@
 //           <p
 //             className="mt-6 max-w-xl mx-auto text-gray-300"
 //             style={{
-//               fontFamily: `"Oxanium", Sans-serif`,
+//               fontFamily: themes.fontPrimary,
 //               fontSize: "18px",
 //               fontWeight: "400",
 //             }}
@@ -240,7 +240,7 @@
 //           />
 //         </div>
 //       </section>
-      
+
 //       {/* Add AboutView component below the hero section */}
 //       <AboutView />
 //     </>
@@ -315,7 +315,7 @@
 //           <h1
 //             className="uppercase mx-auto"
 //             style={{
-//               fontFamily: `"Oxanium", Sans-serif`,
+//               fontFamily: themes.fontPrimary,
 //               fontSize: "72px",
 //               fontWeight: "500",
 //               lineHeight: "1.15",
@@ -329,7 +329,7 @@
 //           <p
 //             className="mt-6 max-w-xl mx-auto text-gray-300"
 //             style={{
-//               fontFamily: `"Oxanium", Sans-serif`,
+//               fontFamily: themes.fontPrimary,
 //               fontSize: "18px",
 //               fontWeight: "400",
 //             }}
@@ -375,13 +375,20 @@ import car from "../assets/images/car.webp";
 import RollingButton from "./RollingButton";
 import AboutView from "./AboutView";
 import ServicesView from "./ServicesView";
+import ParallaxCarSection from "./ParallaxCarSection";
+
 import { themes } from "../config/themeConfig";
+import WhyChoose from "./WhyChoose";
+import TestimonialsView from "./TestimonialView";
+import FAQView from "./FAQView";
+import CtaView from "./CtaView";
+import InstagramView from "./InstagramView";
 
 export default function HomeHero() {
   return (
     <>
       <section
-        className="relative w-full min-h-screen flex flex-col items-center pt-32 pb-24"
+        className="relative w-full min-h-screen flex flex-col items-center pt-32 pb-32"
         style={{ backgroundColor: themes.backgroundBlack }}
       >
         {/* CONTENT */}
@@ -390,14 +397,14 @@ export default function HomeHero() {
           style={{ color: themes.textWhite }}
         >
           <h1
-            className="uppercase mx-auto"
+            className="uppercase mx-auto text-4xl sm:text-5xl md:text-6xl lg:text-[72px]"
             style={{
-              fontFamily: `"Oxanium", Sans-serif`,
-              fontSize: "72px",
+              fontFamily: themes.fontPrimary,
               fontWeight: "500",
               lineHeight: "1.15",
             }}
           >
+
             Where Every <br />
             Detail Truly <br />
             Matters
@@ -406,7 +413,7 @@ export default function HomeHero() {
           <p
             className="mt-6 max-w-xl mx-auto"
             style={{
-              fontFamily: `"Oxanium", Sans-serif`,
+              fontFamily: themes.fontPrimary,
               fontSize: "18px",
               fontWeight: "400",
               color: themes.textWhite,
@@ -428,7 +435,7 @@ export default function HomeHero() {
           <img
             src={car}
             alt="Car"
-            className="w-[80%] max-w-6xl object-contain"
+            className="w-[90%] sm:w-[85%] md:w-[80%] max-w-6xl object-contain"
           />
         </div>
       </section>
@@ -449,7 +456,55 @@ export default function HomeHero() {
         <AboutView />
       </div>
 
-      
+      {/* Cta SECTION */}
+      <div
+        className=""
+        style={{ backgroundColor: themes.backgroundGray }}
+      >
+        <CtaView />
+      </div>
+
+      {/* testimonial SECTION */}
+      <div
+        className="py-8 sm:py-12 md:py-16"
+        style={{ backgroundColor: themes.backgroundBlack }}
+      >
+        <TestimonialsView />
+      </div>
+
+
+
+      {/* whychoose SECTION */}
+      <div className="" style={{ backgroundColor: themes.backgroundBlack }}>
+        <WhyChoose />
+      </div>
+
+
+      {/* parallax SECTION */}
+      <div
+        className="py-8 sm:py-12 md:py-16"
+        style={{ backgroundColor: themes.backgroundBlack }}
+      >
+        <ParallaxCarSection />
+      </div>
+                {/* FAQ SECTION */}
+      <div
+        className=""
+        style={{ backgroundColor: themes.backgroundBlack }}
+      >
+        <FAQView />
+      </div>
+
+                {/* Instagram SECTION */}
+      <div
+        className=""
+        style={{ backgroundColor: themes.backgroundBlack }}
+      >
+        <InstagramView />
+      </div>
+
+
+
     </>
   );
 }
