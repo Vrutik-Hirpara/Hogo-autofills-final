@@ -376,7 +376,7 @@ import RollingButton from "./RollingButton";
 import AboutView from "./AboutView";
 import ServicesView from "./ServicesView";
 import ParallaxCarSection from "./ParallaxCarSection";
-import websiteBackground from "../assets/images/website-background.webp"; // adjust path if needed
+// import websiteBackground from "../assets/images/website-background.webp"; 
 
 import { themes } from "../config/themeConfig";
 import WhyChoose from "./WhyChoose";
@@ -389,7 +389,7 @@ import BeforeAfterView from "./BeforeAfterView";
 export default function HomeHero() {
   return (
     <>
-<section
+{/* <section
   className="
     relative w-full min-h-screen 
     flex flex-col items-center 
@@ -400,9 +400,28 @@ export default function HomeHero() {
     backgroundImage: `url(${websiteBackground})`,
     backgroundColor: themes.backgroundBlack,
   }}
+> */}
+
+
+<section
+  className="
+    relative w-full min-h-screen 
+    flex flex-col items-center 
+    pt-32 pb-32 
+    bg-cover bg-center bg-no-repeat
+  "
+  style={{
+    backgroundColor: themes.backgroundBlack,
+  }}
 >
   {/* 🔹 LIGHT OVERLAY (BACKGROUND OPACITY DOWN) */}
-  <div className="absolute inset-0 bg-black/60"></div>
+<div
+  className="absolute inset-0"
+  style={{
+    backgroundColor: themes.backgroundBlack,
+    opacity: 0.6,
+  }}
+></div>
   {/* ↑ change 20/30/40 as per need */}
 
   {/* CONTENT (ABOVE OVERLAY) */}

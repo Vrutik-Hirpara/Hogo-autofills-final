@@ -99,12 +99,14 @@ export default function NavbarView() {
       ></div>
 
       {/* ================ SIDEBAR ================= */}
-      <div
-        className={`fixed top-0 right-0 h-full w-[75vw] sm:w-[380px] md:w-[400px]
- bg-[#0A0A0A] z-50 shadow-2xl transition-transform duration-400 ${
-          open ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
+<div
+  className={`fixed top-0 right-0 h-full w-[75vw] sm:w-[380px] md:w-[400px]
+    z-50 shadow-2xl transition-transform duration-400 ${
+      open ? "translate-x-0" : "translate-x-full"
+    }`}
+  style={{ backgroundColor: themes.backgroundBlack }}
+>
+
         <div className="h-full flex flex-col justify-between p-6 sm:p-8
  overflow-y-auto">
           {/* TOP: LOGO + CLOSE */}
