@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
+import { themes } from "../config/themeConfig";
+
 import RollingButton from "../components/RollingButton"; // adjust path if needed
 import {
   FaFacebookF,
@@ -28,8 +30,13 @@ export default function NavbarView() {
       {/* ================= NAVBAR ================= */}
 <nav
   className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 sm:py-6 ${
-    scrolled ? "bg-black shadow-md" : "bg-transparent"
+    scrolled ? "shadow-md" : ""
   }`}
+  style={{
+    backgroundColor: scrolled
+      ? themes.backgroundBlack
+      : "transparent",
+  }}
 >
 
 
