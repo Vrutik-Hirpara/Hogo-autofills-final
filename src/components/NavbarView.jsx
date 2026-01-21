@@ -233,7 +233,13 @@ export default function NavbarView() {
           className="max-w-7xl mx-auto px-4 sm:px-6
  flex items-center justify-between"
         >
-          <img src={logo} alt="Hogo Autofills" className="h-10 sm:h-12" />
+          <Link to="/">
+  <img
+    src={logo}
+    alt="Hogo Autofills"
+    className="h-10 sm:h-12 cursor-pointer"
+  />
+</Link>
 
           <div className="hidden md:flex items-center gap-12">
             {[
