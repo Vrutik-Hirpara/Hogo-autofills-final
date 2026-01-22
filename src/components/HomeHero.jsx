@@ -1,6 +1,6 @@
 //  black blue logo grey
 
-import car from "../assets/images/car.webp";
+import car from "../assets/images/audi1.png";
 import RollingButton from "./RollingButton";
 import AboutView from "./AboutView";
 import ServicesView from "./ServicesView";
